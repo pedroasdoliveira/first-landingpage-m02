@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(18, 173, 245);
+}
+
+main {
+    margin: 0 10rem 0 10rem;
+}
+
+header {
+    margin: 0 2rem 0 2rem;
+}
+
+nav {
+    background-color: rgb(47, 112, 253);
+    position: fixed;
+    width: 100%;
+}
+
+ul#menu {
+    display: flex;
+    list-style: none;
+
+    align-items: center;
+    justify-content: center;
+}
+
+ul#menu li {
+    padding: 1rem;
+    color: #fff;
+}
+
+ul#menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul#menu li:hover {
+    transform: scale(0.7) ;
+}
+
+ul#menu li i {
+    font-size: 2rem;
+}
+
+header img {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+header p {
+    margin: 0 10rem 0 10rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+section#cursos h2{
+    text-align: center;
+    padding: 3rem;
+    font-size: 2.5rem;
+}
+
+section#cursos {
+    margin-bottom: 5rem;
+    margin-top: 0.5rem;
+}
+
+section#cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.card {
+    width: 20rem;
+    padding: 1rem;
+    transition: transform .5s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    box-shadow: 5px 5px 5px 5px #00000060;
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    margin-top: 1.3rem;
+    text-align: center;
+}
+
+.card p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+section#imagens {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section#imagens figure figcaption {
+    text-align: center;
+}
+
+section#imagens p {
+    padding: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+section#increvase {
+    display: flex;
+    align-items: center;
+
+    padding: 3rem;
+}
+
+section#increvase form {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 50%;
+}
+
+section#increvase form input {
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem 1rem 1rem 1rem;
+    font-size: 1rem;
+    border: solid 2px rgb(47, 112, 253);
+    border-radius: 1rem;
+}
+
+section#increvase form input[type="submit"] {
+    border: solid 2px rgb(47, 112, 253);
+    border-radius: 1rem;
+    padding: .6rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #fff;
+    color: rgb(47, 112, 253);
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    transition: all .2s ease-in-out;
+}
+
+section#increvase form input[type="submit"]:hover {
+    background-color: rgb(47, 112, 253);
+    color: #fff;
+    cursor: pointer;
+}
+
+section#increvase form label {
+    margin: 0 1rem 0 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+section#increvase img {
+    width: 50%;
+}
+
+footer {
+    background-color: rgb(47, 112, 253);
+    padding: 4rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color: rgb(178, 18, 192);
+}
