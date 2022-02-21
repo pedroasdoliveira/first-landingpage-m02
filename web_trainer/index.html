@@ -37,7 +37,7 @@
 
         <section id="cards">
 
-          <div class="card">
+          <div class="card" data-anime="up">
             <img src="https://images.typeform.com/images/C83jPM99Hh/image/default" alt="html e css">
             <h3>Curso básico de HTML e CSS</h3>
             <p>
@@ -48,7 +48,7 @@
             </p>
           </div>
   
-          <div class="card">
+          <div class="card" data-anime="up">
             <img src="https://dkrn4sk0rn31v.cloudfront.net/uploads/2019/04/01182054/0-400x280.png" alt="css Flexbox e Grid layout">
             <h3>CSS Flexbox e Grid</h3>
             <p>
@@ -59,7 +59,7 @@
             </p>
           </div>
   
-          <div class="card">
+          <div class="card" data-anime="up">
             <img src="https://logospng.org/download/javascript/logo-javascript-256.png" alt="javascript">
             <h3>JavaScript</h3>
             <p>
@@ -89,17 +89,15 @@
 
         <form action="">
 
-          <label>
-            Nome:
-            <input type="text" id="name" placeholder="Digite seu nome">
-          </label>
+          <label for="nome" id="labelNome">
+            Nome:</label>
+          <input type="text" id="name" name="nome" required placeholder="Digite seu nome">
 
-          <label>
-            E-mail:
-            <input type="email" id="email" placeholder="Digite seu E-mail">
-          </label>
+          <label for="email" id="labelEmail">
+            E-mail:</label>
+          <input type="email" id="email" name="email" required placeholder="Digite seu E-mail">
 
-          <input type="submit" value="Enviar">
+          <input type="submit" id="inputEnviar" class="disableEnviar" value="Enviar">
 
         </form>
 
@@ -113,5 +111,6 @@
       <p><a href="www.blueedtech.com.br" target="_blank">Blue EdTech </a>. Todos os direitos reservados &copy;</p>
     </footer>
 
+    <script src="./script.js"></script>
   </body>
 </html>

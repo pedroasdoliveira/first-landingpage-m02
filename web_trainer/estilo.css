@@ -27,6 +27,7 @@ nav {
     background-color: rgb(47, 112, 253);
     position: fixed;
     width: 100%;
+    z-index: 999;
 }
 
 ul#menu {
@@ -175,6 +176,17 @@ section#increvase form input[type="submit"]:hover {
     cursor: pointer;
 }
 
+.disableEnviar {
+    border: solid 2px gray !important;
+    color: gray !important;
+}
+
+.disableEnviar:hover {
+    color: #fff !important;
+    background-color: gray !important;
+    cursor: pointer !important;
+}
+
 section#increvase form label {
     margin: 0 1rem 0 1rem;
     font-size: 1.2rem;
@@ -201,4 +213,23 @@ footer a {
 
 footer a:hover {
     color: rgb(178, 18, 192);
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="up"] {
+    transform: translate3d(0, 100%, 0);
+}
+
+[data-anime].animeta {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+[data-anime].animeta:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
